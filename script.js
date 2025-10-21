@@ -29,7 +29,11 @@
   })
 
   cw2.addEventListener("click", function() {
-    //TODO
+    fetch('https://jsonplaceholder.typicode.com/posts/1')
+      .then(response => response.json())
+      .then(object => {
+        answer.innerHTML = `<h3>${object.title}</h3>${object.body}`;
+      })
   })
 
   cw3.addEventListener("click", function() {
