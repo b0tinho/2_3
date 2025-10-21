@@ -30,6 +30,7 @@
       })
   })
 
+
   cw2.addEventListener("click", function() {
     fetch('https://jsonplaceholder.typicode.com/posts/1')
       .then(response => response.json())
