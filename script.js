@@ -27,6 +27,7 @@
         html += '</ul>';
         console.log(html);
         answer.innerHTML = html;
+
       })
   })
 
