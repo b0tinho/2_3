@@ -1,0 +1,31 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Jeden"
+    },
+    {
+      "id": 2,
+      "title": "Dwa"
+    },
+    {
+      "id": 3,
+      "title": "Trzy"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "com pierwszy",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "com drugi",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
