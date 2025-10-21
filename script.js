@@ -24,6 +24,7 @@
           html += `<li><h3>${element.title}</h3>${element.body}</li>`;
         });
         html += '</ul>';
+        console.log(html);
         answer.innerHTML = html;
       })
   })
@@ -32,6 +33,7 @@
     fetch('https://jsonplaceholder.typicode.com/posts/1')
       .then(response => response.json())
       .then(object => {
+        console.log(object)
         answer.innerHTML = `<h3>${object.title}</h3>${object.body}`;
       })
   })
@@ -51,6 +53,7 @@
     })
       .then(response => response.json())
       .then(data => {
+        console.log(data)
         answer.innerHTML = `Dodano nowy post o ID = ${data.id}`;
       })
   })
