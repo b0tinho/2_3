@@ -15,7 +15,16 @@
   })
 
   cw1.addEventListener("click", function() {
-    //TODO
+    fetch('https://jsonplaceholder.typicode.com/posts')
+      .then(response => response.json())
+      .then(array => {
+        let html = '<ul>';
+        array.forEach(element => {
+          html += `<li><h3>${element.title}</h3>${element.body}</li>`;
+        });
+        html += '</ul>';
+        answer.innerHTML = html;
+      })
   })
 
   cw2.addEventListener("click", function() {
